@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
-import SearchForm from "./components/SearchForm";
-import RepoList from "./components/RepoList";
+import SearchForm from "./components/searchForm.jsx";
+import RepoList from "./components/repoList.jsx";
 
 const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5000/api";
 
