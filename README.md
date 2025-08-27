@@ -1,12 +1,25 @@
-# React + Vite
+# GitHub Repo Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Full-Stack app that searches GitHub repositories, stores results in MongoDB, and displays them on a dashboard.
 
-Currently, two official plugins are available:
+## Tech Stack
+- Frontend: React, Axios
+- Backend: Node.js, Express
+- Database: MongoDB Atlas
+- Deployment: Render (backend) + Netlify (frontend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Search GitHub repos by keyword
+- Store results in MongoDB
+- Display results with pagination
+- Error handling
+- Deployed live
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup
+1. Clone repo
+2. Backend:
+   ```bash
+   cd backend
+   npm install
+   echo "MONGO_URI=your_connection_string" > .env
+   npm start
